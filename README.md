@@ -12,7 +12,20 @@ The project explored the tradeoffs between model performance and interpretabilit
 
 ## ai-chatbot
 
-Built multi-turn AI chatbots using Streamlit and the OpenAI API with conversational memory and session state management. In this project, I explored AI application development by connecting user interactions, API-based model responses, and frontend components into a complete chatbot experience.
+A progression of Streamlit apps built on the OpenAI API, each adding one AI application capability on top of a shared chat interface — from a basic conversational loop to multimodal document extraction.
+
+- **ai-chatbot.py** — Streamlit, OpenAI API, chat completions, session state, message history
+- **ai-chatbot-streaming.py** — token streaming, real-time output, `st.write_stream`
+- **ai-chatbot-summary.py** — context management, automatic summarization, token tracking, cost optimization, gpt-4o-mini
+- **image-interpreter.py** — multimodal (GPT-4o vision), OCR, PDF/image parsing, structured JSON output, invoice/receipt extraction
+
+## rag
+
+Retrieval-Augmented Generation systems that ground model responses in external data, built with LangChain. Covers the full RAG pipeline over unstructured text and extends it to structured relational databases.
+
+- **BuildingRAGSystem.ipynb** — document loading, text splitting, embeddings, ChromaDB vector store, retriever, LangChain chains (LCEL)
+- **BuildingImprovingDocumentRAGSystem.ipynb** — baseline RAG chain, query rewriting, retrieval quality, evaluation and comparison
+- **BuildNL2SQL.ipynb** — natural language to SQL, SQLAlchemy, structured data, schema-aware querying, pandas
 
 
 
